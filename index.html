@@ -9,6 +9,57 @@
 </head>
 <body>
 
+<!-- Custom illustration sprite — abstract symbols, single weight, brand teal -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="illo-laparoscopy" viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <circle cx="100" cy="78" r="44" stroke-opacity="0.22"/>
+    <circle cx="74" cy="62" r="3" fill="currentColor" stroke="none"/>
+    <circle cx="126" cy="62" r="3" fill="currentColor" stroke="none"/>
+    <circle cx="100" cy="106" r="3" fill="currentColor" stroke="none"/>
+    <line x1="74" y1="62" x2="100" y2="78" stroke-opacity="0.5"/>
+    <line x1="126" y1="62" x2="100" y2="78" stroke-opacity="0.5"/>
+    <line x1="100" y1="106" x2="100" y2="78" stroke-opacity="0.5"/>
+    <circle cx="100" cy="78" r="2.5" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="illo-endometriosis" viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <circle cx="100" cy="75" r="48" stroke-opacity="0.22"/>
+    <path d="M76 68 Q88 56 108 64 Q128 72 132 96"/>
+    <circle cx="76" cy="68" r="2.6" fill="currentColor" stroke="none"/>
+    <circle cx="108" cy="64" r="2.6" fill="currentColor" stroke="none"/>
+    <circle cx="132" cy="96" r="2.6" fill="currentColor" stroke="none"/>
+    <circle cx="86" cy="92" r="1.8" fill="currentColor" stroke="none" fill-opacity="0.55"/>
+  </symbol>
+  <symbol id="illo-highrisk" viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <path d="M58 95 Q58 50 100 50 Q142 50 142 95"/>
+    <path d="M75 96 Q75 66 100 66 Q125 66 125 96" stroke-opacity="0.45"/>
+    <circle cx="100" cy="92" r="3.5" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="illo-gynaecology" viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <circle cx="100" cy="75" r="40" stroke-opacity="0.22"/>
+    <path d="M100 40 L100 110" stroke-opacity="0.55"/>
+    <path d="M65 75 L135 75" stroke-opacity="0.55"/>
+    <circle cx="100" cy="75" r="3.2" fill="currentColor" stroke="none"/>
+    <circle cx="100" cy="40" r="2" fill="currentColor" stroke="none"/>
+    <circle cx="100" cy="110" r="2" fill="currentColor" stroke="none"/>
+    <circle cx="65" cy="75" r="2" fill="currentColor" stroke="none"/>
+    <circle cx="135" cy="75" r="2" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="illo-obstetrics" viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+    <path d="M50 110 Q100 110 100 70 Q100 38 132 38"/>
+    <path d="M68 110 Q105 105 105 80" stroke-opacity="0.4"/>
+    <path d="M86 110 Q115 105 115 90" stroke-opacity="0.25"/>
+    <circle cx="50" cy="110" r="2.6" fill="currentColor" stroke="none"/>
+    <circle cx="132" cy="38" r="2.6" fill="currentColor" stroke="none"/>
+  </symbol>
+  <symbol id="illo-fertility" viewBox="0 0 200 150" fill="none" stroke="currentColor" stroke-width="1.4">
+    <circle cx="100" cy="75" r="50" stroke-opacity="0.18"/>
+    <circle cx="100" cy="75" r="32" stroke-opacity="0.32"/>
+    <circle cx="100" cy="75" r="14" stroke-opacity="0.55"/>
+    <circle cx="100" cy="75" r="4" fill="currentColor" stroke="none"/>
+  </symbol>
+</svg>
+
+
 <header class="topbar">
   <div class="frame">
     <a href="index.html" class="brand">
@@ -138,7 +189,7 @@
 
     <div class="services-grid">
       <article class="svc-card reveal">
-        <div class="img"><img src="https://www.drshivahk.com/wp-content/uploads/2020/10/tools.jpg" alt="Laparoscopic surgical instruments"></div>
+        <div class="illo" role="img" aria-label="Three precision points — abstract"><svg viewBox="0 0 200 150"><use href="#illo-laparoscopy"/></svg></div>
         <div class="body">
           <h3>Laparoscopic surgery</h3>
           <p>Advanced minimally invasive procedures including hysterectomy, myomectomy, ovarian cystectomy and adhesiolysis — performed with a focus on faster recovery and minimal scarring.</p>
@@ -147,7 +198,7 @@
       </article>
 
       <article class="svc-card reveal d1">
-        <div class="img"><img src="https://www.drshivahk.com/wp-content/uploads/2020/10/female-pain.jpg" alt="Endometriosis care"></div>
+        <div class="illo" role="img" aria-label="Considered exploration — abstract"><svg viewBox="0 0 200 150"><use href="#illo-endometriosis"/></svg></div>
         <div class="body">
           <h3>Endometriosis care</h3>
           <p>Diagnosis and surgical management of endometriosis &mdash; including deep infiltrating disease &mdash; combined with long-term medical and lifestyle support tailored to each patient.</p>
@@ -156,7 +207,7 @@
       </article>
 
       <article class="svc-card reveal d2">
-        <div class="img"><img src="https://www.drshivahk.com/wp-content/uploads/2020/10/pregnant-woman.jpg" alt="High-risk pregnancy care"></div>
+        <div class="illo" role="img" aria-label="Held with care — abstract"><svg viewBox="0 0 200 150"><use href="#illo-highrisk"/></svg></div>
         <div class="body">
           <h3>High-risk pregnancy</h3>
           <p>Specialist care for complex pregnancies &mdash; pre-eclampsia, gestational diabetes, recurrent miscarriage, and pregnancy after surgery &mdash; with close monitoring throughout each trimester.</p>
@@ -165,7 +216,7 @@
       </article>
 
       <article class="svc-card reveal">
-        <div class="img"><img src="https://www.drshivahk.com/wp-content/uploads/2020/10/examination.jpg" alt="Routine gynaecology examination"></div>
+        <div class="illo" role="img" aria-label="Balanced and ordered — abstract"><svg viewBox="0 0 200 150"><use href="#illo-gynaecology"/></svg></div>
         <div class="body">
           <h3>Routine gynaecology</h3>
           <p>Annual examinations, contraception counselling, menstrual disorders, PCOS management and menopause care &mdash; the everyday work of looking after a woman's health.</p>
@@ -174,7 +225,7 @@
       </article>
 
       <article class="svc-card reveal d1">
-        <div class="img"><img src="https://www.drshivahk.com/wp-content/uploads/2020/10/ultrasound-1.jpg" alt="Pregnancy ultrasound"></div>
+        <div class="illo" role="img" aria-label="Becoming — abstract"><svg viewBox="0 0 200 150"><use href="#illo-obstetrics"/></svg></div>
         <div class="body">
           <h3>Obstetrics &amp; antenatal</h3>
           <p>Comprehensive antenatal care, normal &amp; complex deliveries, caesarean sections, and post-natal follow-up &mdash; with care continuity from first scan to first weeks at home.</p>
@@ -183,7 +234,7 @@
       </article>
 
       <article class="svc-card reveal d2">
-        <div class="img"><img src="https://www.drshivahk.com/wp-content/uploads/2020/10/gynaecology-1.jpg" alt="Fertility consultation"></div>
+        <div class="illo" role="img" aria-label="A seed at centre — abstract"><svg viewBox="0 0 200 150"><use href="#illo-fertility"/></svg></div>
         <div class="body">
           <h3>Fertility &amp; conception</h3>
           <p>Pre-conception counselling, ovulation induction, fertility evaluation, surgical correction of fibroids, polyps and tubal disease &mdash; pathways towards parenthood.</p>

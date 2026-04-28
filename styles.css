@@ -376,6 +376,39 @@ a { color: inherit; text-decoration: none; }
 }
 .svc-card .img img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease; }
 .svc-card:hover .img img { transform: scale(1.05); }
+
+/* Custom illustration variant for service cards */
+.svc-card .illo {
+  aspect-ratio: 4/3;
+  background: var(--bone-deep);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal);
+  position: relative;
+  transition: background .4s ease;
+  overflow: hidden;
+}
+.svc-card:hover .illo { background: var(--bone); }
+.svc-card .illo svg {
+  width: 50%; height: auto; max-height: 65%;
+  transition: transform .6s cubic-bezier(.2,.6,.2,1);
+}
+.svc-card:hover .illo svg { transform: scale(1.06); }
+.svc-card .illo::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, transparent 50%, rgba(220, 201, 176, 0.12));
+  pointer-events: none;
+}
+
+.svc-row .img-wrap.illo-wrap {
+  aspect-ratio: 16/9;
+  background: var(--bone-deep);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--teal);
+}
+.svc-row .img-wrap.illo-wrap svg {
+  width: 22%; height: auto; max-height: 70%;
+}
 .svc-card .body { padding: 24px 26px 28px; flex: 1; display: flex; flex-direction: column; }
 .svc-card .body h3 {
   font-family: var(--sans);
