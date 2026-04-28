@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact &amp; Booking — Dr. Shiva Harikrishnan</title>
+  <meta name="description" content="Book a consultation with Dr. Shiva Harikrishnan at Medcare Royal Speciality Hospital, Dubai. Phone +971 58 296 5859 · WhatsApp · in-person and tele-consultations." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="frame">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">Dr. Shiva <em>Harikrishnan</em></span>
+      <span class="brand-sub">Dubai · est. 1992</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="#">Journal</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="contact.html" class="cta-pill">Book a consultation <span class="arrow">→</span></a>
+  </div>
+</header>
+
+<!-- ============= PAGE HEAD ============= -->
+<section class="page-head">
+  <div class="frame">
+    <span class="eyebrow reveal">Book an appointment</span>
+    <h1 class="display h-l reveal d1">A first <em>conversation</em>,<br>at your pace.</h1>
+    <p class="lead reveal d2">Most appointments are available within the same week. Tele-consultations are offered for international patients and for follow-ups. Insurance is accepted &mdash; please bring your card to the first visit.</p>
+  </div>
+</section>
+
+<!-- ============= GRID ============= -->
+<section class="section-tight">
+  <div class="frame">
+    <div class="contact-grid">
+
+      <div class="contact-info reveal">
+        <h3>How to reach us.</h3>
+
+        <div class="info-row">
+          <div class="k">Clinic</div>
+          <div class="v">
+            <strong>Medcare Royal Speciality Hospital</strong><br>
+            Al Qusais, Dubai<br>
+            United Arab Emirates
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="k">Phone</div>
+          <div class="v"><a href="tel:+971582965859">+971 58 296 5859</a></div>
+        </div>
+
+        <div class="info-row">
+          <div class="k">WhatsApp</div>
+          <div class="v"><a href="https://api.whatsapp.com/send?phone=971582965859">+971 58 296 5859</a></div>
+        </div>
+
+        <div class="info-row">
+          <div class="k">Email</div>
+          <div class="v"><a href="mailto:appointments@drshivahk.com">appointments@drshivahk.com</a></div>
+        </div>
+
+        <div class="info-row">
+          <div class="k">Hours</div>
+          <div class="v">
+            Sunday – Thursday · 9:00 – 17:00<br>
+            <span style="color: var(--muted); font-size: 13px;">Saturdays by appointment · Closed Fridays</span>
+          </div>
+        </div>
+
+        <div class="info-row">
+          <div class="k">Languages</div>
+          <div class="v">English · Hindi · Malayalam · Arabic interpreter on request</div>
+        </div>
+
+        <div class="info-row" style="border-bottom: none;">
+          <div class="k">Follow</div>
+          <div class="v">
+            <a href="https://www.instagram.com/dr.shivahk/" target="_blank" rel="noopener">Instagram</a> &nbsp;·&nbsp;
+            <a href="https://www.youtube.com/channel/UCBgul8vjgICS8xpONQhB9kg" target="_blank" rel="noopener">YouTube</a> &nbsp;·&nbsp;
+            <a href="https://www.facebook.com/share/16XE7Jk3NX/" target="_blank" rel="noopener">Facebook</a> &nbsp;·&nbsp;
+            <a href="https://api.whatsapp.com/send?phone=971582965859" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="book-form reveal d1">
+        <h3>Request an appointment.</h3>
+        <p class="sub">Or book instantly via Medcare's online portal &mdash; <a href="https://medcare.okadoc.com/en-ae/doctor/gynecologist-obstetrician/dubai/shiva-harikrishnan" target="_blank" rel="noopener" style="color: var(--teal); border-bottom: 1px solid var(--teal); padding-bottom: 1px;">Okadoc</a>.</p>
+
+        <form onsubmit="event.preventDefault(); window.open('https://medcare.okadoc.com/en-ae/doctor/gynecologist-obstetrician/dubai/shiva-harikrishnan', '_blank');">
+          <div class="field-row">
+            <div class="field">
+              <label for="fn">First name</label>
+              <input id="fn" type="text" required>
+            </div>
+            <div class="field">
+              <label for="ln">Last name</label>
+              <input id="ln" type="text" required>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="em">Email</label>
+              <input id="em" type="email" required>
+            </div>
+            <div class="field">
+              <label for="ph">Phone</label>
+              <input id="ph" type="tel" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="reason">Reason for visit</label>
+            <select id="reason" required>
+              <option value="">Select a reason…</option>
+              <option>Routine consultation</option>
+              <option>Antenatal / pregnancy care</option>
+              <option>High-risk pregnancy</option>
+              <option>Endometriosis / pelvic pain</option>
+              <option>Fibroids</option>
+              <option>Fertility / pre-conception</option>
+              <option>Surgical second opinion</option>
+              <option>Tele-consultation</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="date">Preferred date</label>
+            <input id="date" type="date">
+          </div>
+
+          <div class="field">
+            <label for="msg">Notes (optional)</label>
+            <textarea id="msg" rows="3" placeholder="Anything you'd like Dr. Shiva to know in advance"></textarea>
+          </div>
+
+          <button type="submit">Request appointment →</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Hospital photo -->
+    <div class="map-tile reveal">
+      <img src="assets/medcare-royal.jpg" alt="Medcare Royal Speciality Hospital, Dubai" />
+      <div class="map-pin">Medcare Royal Speciality Hospital · Al Qusais, Dubai</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer>
+  <div class="frame">
+    <div class="footer-grid">
+      <div class="footer-brand">Care, refined.<br>Across <em>thirty-three</em> years.</div>
+      <div class="footer-col">
+        <h4>Practice</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Journal</a>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <a>Medcare Royal Speciality Hospital</a>
+        <a>Al Qusais, Dubai</a>
+        <a href="tel:+971582965859">+971 58 296 5859</a>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <a href="https://www.instagram.com/dr.shivahk/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.youtube.com/channel/UCBgul8vjgICS8xpONQhB9kg" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.facebook.com/share/16XE7Jk3NX/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://api.whatsapp.com/send?phone=971582965859" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© Dr. Shiva Harikrishnan · 2026</span>
+      <span>Senior Consultant Obstetrician · Dubai</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
